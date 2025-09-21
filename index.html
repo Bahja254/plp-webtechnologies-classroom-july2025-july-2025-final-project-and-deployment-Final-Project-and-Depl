@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bahja's Kitchen — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-logo"><a href="index.html">Bahja's Kitchen</a></h1>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero reveal">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Delicious food, simple techniques.</h2>
+          <p>Recipes that are easy to make and easy to love. See featured dishes and full step-by-step recipes.</p>
+          <p><a class="btn" href="recipes.html">Browse Recipes</a></p>
+        </div>
+        <figure class="hero-image" aria-hidden="true">
+          <!-- If you want, replace this later with another image -->
+          <img src="spaghetti.jpg" alt="Top view of a plate of spaghetti" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="features container reveal">
+      <div class="grid-3">
+        <article>
+          <h3>Responsive</h3>
+          <p>Works well on mobile, tablet and desktop.</p>
+        </article>
+        <article>
+          <h3>Interactive</h3>
+          <p>Filter recipes, mobile menu and validated forms.</p>
+        </article>
+        <article>
+          <h3>Production-ready</h3>
+          <p>Organized files, semantic HTML and deployable to GitHub Pages.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured container reveal">
+      <h2>Featured Recipes</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <a href="recipe-spaghetti.html">
+            <img src="spaghetti.jpg" alt="Spaghetti plate" />
+            <h4>Classic Spaghetti</h4>
+            <p>Quick, comforting dinner.</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="recipes.html">
+            <img src="salad.jpg" alt="Fresh salad" />
+            <h4>Veggie Delight</h4>
+            <p>Healthy & vibrant.</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="recipes.html">
+            <img src="cake.jpg" alt="Chocolate cake" />
+            <h4>Sweet Treats</h4>
+            <p>Simple desserts.</p>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Bahja's Kitchen — Built with HTML, CSS, and JS.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

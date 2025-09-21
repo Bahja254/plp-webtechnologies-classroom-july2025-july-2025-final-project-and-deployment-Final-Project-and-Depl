@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recipes — Bahja's Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-logo"><a href="index.html">Bahja's Kitchen</a></h1>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="reveal">
+      <h2>All Recipes</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dinner">Dinner</button>
+        <button class="filter-btn" data-filter="dessert">Dessert</button>
+        <button class="filter-btn" data-filter="vegan">Vegan</button>
+      </div>
+
+      <div id="recipe-grid" class="grid-cards">
+        <!-- each card has data-category for filtering -->
+        <article class="card" data-category="dinner">
+          <a href="recipe-spaghetti.html">
+            <img src="images/spaghetti.jpg" alt="Spaghetti" />
+            <h4>Classic Spaghetti</h4>
+            <p>15 min prep • 30 min cook</p>
+          </a>
+        </article>
+
+        <article class="card" data-category="dessert">
+          <a href="recipe-spaghetti.html">
+            <img src="images/recipe-thumb-2.jpg" alt="Dessert" />
+            <h4>Chocolate Mug Cake</h4>
+            <p>Microwave dessert in minutes</p>
+          </a>
+        </article>
+
+        <article class="card" data-category="vegan">
+          <a href="recipe-spaghetti.html">
+            <img src="images/recipe-thumb-1.jpg" alt="Vegan bowl" />
+            <h4>Roasted Veg Bowl</h4>
+            <p>Roasted seasonal veg and grains</p>
+          </a>
+        </article>
+
+        <!-- duplicate or add more recipe cards as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Bahja's Kitchen</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
